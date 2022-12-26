@@ -17,8 +17,10 @@ from django.urls import path
 from django.contrib import admin
 
 from tutorial.views import PersonListView
+from tutorial.views import FilteredPersonListView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("people/", PersonListView.as_view())
+    path("people/", PersonListView.as_view()),
+    path("filter/", FilteredPersonListView.as_view())
 ]

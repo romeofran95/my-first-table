@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jfi!n=2d4s^o92pk%5kms(c&%!e6f+i9x!mh30p(mxr%iag541
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
 
 
 # Application definition
@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_tables2',
-    'tutorial'
+    'tutorial',
+    'django_filters',
+    'bootstrap3',
     
 ]
 
